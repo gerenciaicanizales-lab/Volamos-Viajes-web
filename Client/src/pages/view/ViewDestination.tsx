@@ -19,11 +19,16 @@ const ViewDestination: React.FC = () => {
     const [showModule, setShowModule] = useState<string>(detailItems.INFORMATION);
 
     // Obtener la información de la ubicación desde location.state o desde el array destinations
-    const destination = location.state?.destination || destinations.find(dest => {
-        const urlName = destinationName?.toLowerCase().split(' ')[0];
-        const destName = dest.name.toLowerCase().split(' ')[0];
-        return urlName === destName;
-    });
+    // Mismo formato que el enlace de la tarjeta: minúsculas, sin tildes ni signos, primera palabra
+    const slug = (text: string = "") =>
+        text
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9\s-]/g, "")
+            .split(" ")[0];
+
+    const destination = location.state?.destination || destinations.find(dest => slug(dest.name) === slug(destinationName));
 
     useEffect(() => {
         scrollToTop();

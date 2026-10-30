@@ -18,6 +18,7 @@ import PromoPopUp from "../../utils/PromoPopUp";
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import SEO from "../../conf/SEO";
 import AppDownloadSection from "../../components/AppDownloadSection";
+import Cotizador from "../../components/Cotizador";
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -108,6 +109,9 @@ const Home: React.FC = () => {
             </a>
           </div>
         </section>
+
+        {/* Cotizador de vuelos, hoteles y paquetes */}
+        <Cotizador />
 
 
         {/* Testimonials con zoom-in y Newsletter */}

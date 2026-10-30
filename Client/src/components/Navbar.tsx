@@ -69,6 +69,7 @@ const Header: React.FC<PropsHeader> = ({ color, showPromoCarousel = true }) => {
     { name: "Categorias", uri: "category" },
     { name: "Autos", uri: "rentacar" },
     { name: "Destinos", uri: "destinations" },
+    { name: "Cotizar", uri: "cotizador" },
   ];
 
   const toggleMobileMenu = () => {

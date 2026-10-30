@@ -2,6 +2,87 @@ import { Destination } from "../../interface/destination.interface";
 
 const destinations: Destination[] = [
   {
+    name: "Cartagena, Colombia",
+    package: [
+      {
+        description: "Escápate a Cartagena: historia, playas y encanto caribeño. 4 días / 3 noches desde $579 por persona.",
+        days: [
+          { avalible: "4 días / 3 noches", text: "Hoteles previstos: Virrey, Aixo o Zalmedina, según disponibilidad." },
+        ],
+        includes: [
+          "Vuelos ida y vuelta desde San Salvador.",
+          "Alojamiento por 3 noches.",
+          "Traslados privados aeropuerto – hotel – aeropuerto.",
+          "Tour en chiva rumbera por Cartagena.",
+        ],
+        table: [
+          {
+            title: "Precio aproximado por persona",
+            rows: [
+              ["Paquete", "Duración", "Precio por persona (base 2)"],
+              ["Cartagena", "4 días / 3 noches", "Desde $579.00"],
+            ],
+          },
+        ],
+        policy: [
+          "Precio por persona en base a 2 personas.",
+          "Tarifa aérea disponible de octubre a febrero.",
+          "No aplica en fechas festivas.",
+          "Precio sujeto a disponibilidad y confirmación al momento de reservar.",
+        ],
+        avalibleUntil: "Tarifa aérea válida de octubre a febrero. Consultar disponibilidad",
+      },
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1534943441045-1009d7cb0bb9?auto=format&fit=crop&w=1600&q=75",
+      "https://images.unsplash.com/photo-1697081544020-6ec2033dc4b2?auto=format&fit=crop&w=1600&q=75",
+      "https://images.unsplash.com/photo-1666977461267-c0e924696510?auto=format&fit=crop&w=1600&q=75",
+    ],
+  },
+  {
+    name: "España: Madrid y los Tesoros de Andalucía",
+    package: [
+      {
+        description: "Circuito con guía en español por Madrid, Toledo, Córdoba, Sevilla, Ronda y Granada. Salida el 1 de mayo de 2027. Resérvalo desde ahora y págalo en cuotas.",
+        days: [
+          { avalible: "1 al 7 de mayo de 2027", text: "6 noches. Madrid, Toledo, Córdoba, Sevilla, Ronda y Granada." },
+        ],
+        includes: [
+          "Hoteles con desayuno buffet.",
+          "Transporte en autocar durante el circuito.",
+          "Guía en español.",
+          "Traslados de llegada y salida.",
+          "Visitas panorámicas en Madrid, Sevilla y Córdoba.",
+          "Excursión a Toledo.",
+          "Paseo en barco por el río Guadalquivir.",
+          "Un almuerzo en Granada y una cena en Sevilla.",
+          "Entradas y experiencias según el programa.",
+          "Seguro básico de viaje.",
+        ],
+        table: [
+          {
+            title: "Precio especial por persona",
+            rows: [
+              ["Salida", "Duración", "Precio por persona"],
+              ["1 de mayo de 2027", "6 noches", "$2,099.00"],
+            ],
+          },
+        ],
+        policy: [
+          "Sujeto a disponibilidad.",
+          "Consulta condiciones y detalles de la tarifa con tu asesor.",
+          "Facilidad de pago en cuotas.",
+        ],
+        avalibleUntil: "Salida 1 de mayo de 2027. Sujeto a disponibilidad",
+      },
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1715463065537-25facb747b85?auto=format&fit=crop&w=1600&q=75",
+      "https://images.unsplash.com/photo-1688724809059-fb6641499d4c?auto=format&fit=crop&w=1600&q=75",
+      "https://images.unsplash.com/photo-1572445831032-f30b10464bde?auto=format&fit=crop&w=1600&q=75",
+    ],
+  },
+  {
     name: "Bocas del toro, Panamá",
     package: [
       {

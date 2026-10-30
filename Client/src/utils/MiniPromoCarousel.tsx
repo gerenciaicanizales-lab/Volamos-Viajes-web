@@ -3,10 +3,11 @@ import classNames from 'classnames';
 
 // Sample promotions
 const promotions = [
-    "✈️ Santo Domingo desde $199.00 *Restricciones aplican",
-    "🇺🇸 Washington D.C desde $273.00 *Restricciones aplican",
-    "🗽 New York D.C desde $209.00 *Restricciones aplican",
-    "🏖️ Miami desde $146.00 *Restricciones aplican",
+    "🌴 Paquete Cartagena 4D/3N desde $579 por persona *Restricciones aplican",
+    "🇪🇸 España: Madrid y Andalucía, salida 1 de mayo 2027, $2,099 por persona",
+    "✈️ Panamá desde $276 ida y vuelta · Viaja en enero y febrero 2027",
+    "🇺🇸 Miami desde $480 ida y vuelta · Viaja en enero y febrero 2027",
+    "🇪🇸 Madrid desde $755 ida y vuelta · Viaja en enero y febrero 2027",
 ];
 
 const MiniPromoCarousel: React.FC = () => {
